@@ -1,4 +1,4 @@
-# 🎩 Vision OCR 
+# Vision OCR - Text Extraction Application
 
 A Streamlit-based web application that provides multiple OCR (Optical Character Recognition) options for extracting text from images. The application supports various OCR models and methods, allowing users to choose the most suitable one for their specific needs.
 
@@ -12,6 +12,11 @@ A Streamlit-based web application that provides multiple OCR (Optical Character 
   - EasyOCR
   - Ollama Vision OCR
 
+- User-friendly Interface:
+  - Simple image upload
+  - Model selection dropdown
+  - Real-time text extraction
+  - Clear result display
 
 ## Installation
 
@@ -21,12 +26,18 @@ git clone https://github.com/yourusername/vision-ocr.git
 cd vision-ocr
 ```
 
-2. Install dependencies:
+2. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Install Tesseract OCR:
+4. Install Tesseract OCR:
 - For Ubuntu/Debian:
   ```bash
   sudo apt-get install tesseract-ocr
@@ -38,7 +49,7 @@ pip install -r requirements.txt
 - For Windows:
   Download and install from: https://github.com/UB-Mannheim/tesseract/wiki
 
-4. Install Ollama:
+5. Install Ollama:
 - Download from: https://ollama.ai
 - Start the Ollama service:
   ```bash
@@ -46,7 +57,7 @@ pip install -r requirements.txt
   ```
 - Pull the required vision model:
   ```bash
-  ollama pull llama3.2-vision:11b
+  ollama pull bakllava
   ```
 
 ## Usage
@@ -64,4 +75,39 @@ streamlit run app.py
 
 5. Click "Extract Text" to process the image
 
-s
+## Project Structure
+
+```
+vision-ocr/
+├── app.py              # Streamlit application file
+├── model.py            # OCR model implementations
+├── requirements.txt    # Project dependencies
+└── README.md          # Project documentation
+```
+
+## Requirements
+
+- Python 3.8+
+- Tesseract OCR
+- Ollama
+- See requirements.txt for Python package dependencies
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Tesseract OCR
+- EasyOCR
+- Microsoft's TrOCR
+- Ollama
+- Streamlit

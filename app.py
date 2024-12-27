@@ -11,12 +11,12 @@ from model import (
 )
 
 def main():
-    st.title("Vision OCR - Text Extraction App")
+    st.title("🎩 Vision OCR")
     uploaded_file = st.file_uploader("Upload an image", type=['png', 'jpg', 'jpeg'])
     
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption='Uploaded Image', use_column_width=True)
+        st.image(image, caption='Uploaded Image', use_container_width =True)
         
         with open("temp_image.png", "wb") as f:
             f.write(uploaded_file.getbuffer())

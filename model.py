@@ -9,9 +9,6 @@ import cv2
 import numpy as np
 from IPython.display import display
 from ollama_ocr import OCRProcessor
-import requests
-import base64
-import json
 
 def tesseract_ocr_extract(image_path):
     try:
