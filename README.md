@@ -17,7 +17,7 @@ A Streamlit-based web application that provides multiple OCR (Optical Character 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/vision-ocr.git
+git clone https://github.com/ssudhanshu488/vision-ocr.git
 cd vision-ocr
 ```
 
@@ -63,5 +63,3 @@ streamlit run app.py
 4. Select your preferred OCR model
 
 5. Click "Extract Text" to process the image
-
-s
